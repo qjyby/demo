@@ -50,6 +50,12 @@ public class SendController {
     public ModelAndView register() {
         return new ModelAndView("register");
     }
+
+    @GetMapping("/index")
+    public ModelAndView index() {
+        return new ModelAndView("index");
+    }
+
     @GetMapping("/login")
     public ModelAndView login() {
         return new ModelAndView("login");
@@ -73,13 +79,19 @@ public class SendController {
             return  new ModelAndView("error",map);
         }
 
-
-
-
-
-
     }
-
+    @PostMapping("/checkLogin")
+    public ModelAndView checkLogin(@RequestParam("mobile")String phone,@RequestParam("password")String password,Map<String, Object> map){
+       UserInfo userInfo =userService.findOne(phone);
+       if (userInfo.getPassword().equals(password)){
+           map.put("url","/api/index");
+           return  new ModelAndView("success",map);
+       }
+       else {
+           map.put("url","/api/login");
+           return  new ModelAndView("error",map);
+       }
+    }
 
 
 }

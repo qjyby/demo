@@ -13,7 +13,7 @@
 
 	<body>
 		<div class="container">
-			<form class="form-login">
+			<form class="form-login" action="/api/checkLogin" method="post">
 				<div class="form-group form-group-lg">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></div>

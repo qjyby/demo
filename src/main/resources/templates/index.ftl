@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>爱家</title>
-    <link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="plugin/swiper/css/swiper.min.css" rel="stylesheet">
-    <link href="plugin/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="css/ihome/main.css" rel="stylesheet">
-    <link href="css/ihome/index.css" rel="stylesheet">
+    <link href="../plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../plugin/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="../plugin/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../css/ihome/main.css" rel="stylesheet">
+    <link href="../css/ihome/index.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="top-bar">
             <div class="register-login fr">
-                <a class="btn top-btn btn-theme" href="register.ftl">注册</a>
-                <a class="btn top-btn btn-theme" href="login.ftl">登录</a>
+                <a class="btn top-btn btn-theme" href="/api/register">注册</a>
+                <a class="btn top-btn btn-theme" href="/api/login">登录</a>
             </div>
             <div class="user-info fr"><span><i class="fa fa-user fa-lg"></i></span> <a class="user-name" href="/my.html"></a></div>
         </div>
@@ -26,15 +26,15 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/home01.jpg"></a>
+                    <a href="#"><img src="../images/home01.jpg"></a>
                     <div class="slide-title">房屋标题1</div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/home02.jpg"></a>
+                    <a href="#"><img src="../images/home02.jpg"></a>
                     <div class="slide-title">房屋标题2</div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#"><img src="images/home03.jpg"></a>
+                    <a href="#"><img src="../images/home03.jpg"></a>
                     <div class="slide-title">房屋标题3</div>
                 </div>
             </div>
@@ -101,12 +101,12 @@
         </div>
     </div>
     
-    <script src="js/jquery.min.js"></script>
-    <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script src="plugin/swiper/js/swiper.jquery.min.js"></script>
-    <script src="plugin/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="plugin/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
-    <script src="js/template.js"></script>
-    <script src="js/ihome/index.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugin/swiper/js/swiper.jquery.min.js"></script>
+    <script src="../plugin/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../plugin/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/ihome/index.js"></script>
 </body>
 </html>

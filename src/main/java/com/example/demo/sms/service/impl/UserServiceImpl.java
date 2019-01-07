@@ -13,8 +13,8 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public UserInfo findOne(String username) {
-        return userDao.findByUsername(username);
+    public UserInfo findOne(String phone) {
+        return userDao.findByPhone(phone);
     }
 
     @Override

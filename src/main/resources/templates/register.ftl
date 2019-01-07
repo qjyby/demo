@@ -52,7 +52,7 @@
 				<div class="error-msg" id="password2-err"><i class="fa fa-exclamation-circle"></i><span></span></div>
 				<button type="submit" class="btn btn-lg btn-theme btn-block">立即注册</button>
 				<p class="login-a">已有账号，
-					<a href="login.ftl">立即登陆</a>
+					<a href="/api/login">立即登陆</a>
 				</p>
 			</form>
 		</div>

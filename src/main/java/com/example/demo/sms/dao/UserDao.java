@@ -4,5 +4,5 @@ import com.example.demo.sms.entity.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserDao extends JpaRepository<UserInfo, Integer> {
-      UserInfo findByUsername(String username);
+     UserInfo findByPhone(String phone);
 }
